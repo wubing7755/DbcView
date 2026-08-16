@@ -15,6 +15,12 @@ Atlas source projects.
 - Dockable tool panels, document tabs, splitters, and layout persistence
   provided by Atlas
 
+## Live demo
+
+A GitHub Pages deployment of the application is available at
+<https://wubing7755.github.io/DbcView/>. Pushes to `main` rebuild and
+deploy it through `.github/workflows/deploy.yml`.
+
 ## Build from the repository
 
 Requires .NET 6 SDK. The project restores `Atlas.Blazor` from nuget.org:
