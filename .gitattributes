@@ -1,0 +1,36 @@
+* text=auto
+
+# C# / Razor / Blazor
+*.cs text eol=lf
+*.razor text eol=lf
+*.csproj text eol=lf
+*.props text eol=lf
+*.targets text eol=lf
+
+# Config / data
+*.dbc text
+*.json text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.editorconfig text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.ps1 text eol=lf
+
+# Web
+*.css text eol=lf
+*.html text eol=lf
+
+# Binary
+*.png binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary

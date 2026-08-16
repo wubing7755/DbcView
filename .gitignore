@@ -1,0 +1,51 @@
+# .NET / Blazor
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.userprefs
+*.DotSettings.user
+Debug/
+Release/
+[Bb]uild/
+bld/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+.packages/
+
+# Visual Studio
+.vs/
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+## Code coverage
+TestResults/
+coverage/
+*.coverage
+*.lcov

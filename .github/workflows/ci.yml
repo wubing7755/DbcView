@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master, 'feature/**', 'feat/**', 'fix/**', 'refactor/**', 'infra/**']
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore
+        run: dotnet restore DbcView.sln
+
+      - name: Build
+        run: dotnet build DbcView.sln --no-restore --configuration Release
+
+      - name: Test
+        run: dotnet test DbcView.sln --no-build --no-restore --configuration Release --verbosity normal
+
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '6.0.x'
+      - run: dotnet restore DbcView.sln
+      - run: dotnet format DbcView.sln --verify-no-changes --no-restore --verbosity minimal

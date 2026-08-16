@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>DbcView</title>
+    <script>
+        // GitHub Pages SPA fallback: redirect only HTML page navigations
+        // (paths without a file extension) to the app root so client-side
+        // routing works. Asset requests (.js/.css/.dll/.wasm/...) must NOT
+        // be redirected, otherwise a missing asset would loop forever.
+        (function () {
+            var path = window.location.pathname;
+            var lastSegment = path.substring(path.lastIndexOf("/") + 1);
+            if (lastSegment.indexOf(".") === -1) {
+                window.location.replace("/DbcView/" + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
