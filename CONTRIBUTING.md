@@ -17,7 +17,9 @@ never references Atlas source projects.
 
 ## Documentation Language
 
-English is the canonical documentation language.
+English is the canonical documentation language. `README.zh.md` mirrors
+`README.md`: keep the same section structure and update both when the
+English version changes.
 
 ## Local Checks
 
@@ -34,6 +36,13 @@ dotnet test DbcView.sln --no-build --no-restore
 # Check code style
 dotnet format DbcView.sln --verify-no-changes --no-restore
 ```
+
+## Testing Unpublished Atlas Packages
+
+To test against unpublished Atlas builds, uncomment the `atlas-local` source
+in `NuGet.Config` and point it at a feed containing `Atlas.Core` and
+`Atlas.Blazor` (for example the Atlas repository's `artifacts/packages`).
+Update the version in `Directory.Packages.props` when needed.
 
 ## Branches
 
