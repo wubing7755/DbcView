@@ -55,15 +55,17 @@ Use short branch names:
 
 ## Commits And PRs
 
-Use Conventional Commit style:
+Use Conventional Commit style with a Chinese description:
 
 ```text
-feat(editor): add signal editing
-fix(parser): handle multiplexed messages
-refactor(store): extract DbcDocument loading from DbcFileStore
-infra(ci): add format verification job
-docs(readme): document repository layout
+feat(editor): 新增信号编辑功能
+fix(parser): 处理多路复用消息
+refactor(store): 从 DbcFileStore 提取 DbcDocument 加载
+infra(ci): 新增格式校验任务
+docs(readme): 记录仓库布局
 ```
+
+Write commit messages, PR titles, and PR descriptions in Chinese.
 
 Before opening a PR:
 
