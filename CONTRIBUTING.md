@@ -17,7 +17,9 @@ never references Atlas source projects.
 
 ## Documentation Language
 
-English is the canonical documentation language.
+English is the canonical documentation language. `README.zh.md` mirrors
+`README.md`: keep the same section structure and update both when the
+English version changes.
 
 ## Local Checks
 
@@ -35,6 +37,13 @@ dotnet test DbcView.sln --no-build --no-restore
 dotnet format DbcView.sln --verify-no-changes --no-restore
 ```
 
+## Testing Unpublished Atlas Packages
+
+To test against unpublished Atlas builds, uncomment the `atlas-local` source
+in `NuGet.Config` and point it at a feed containing `Atlas.Core` and
+`Atlas.Blazor` (for example the Atlas repository's `artifacts/packages`).
+Update the version in `Directory.Packages.props` when needed.
+
 ## Branches
 
 Use short branch names:
@@ -46,15 +55,17 @@ Use short branch names:
 
 ## Commits And PRs
 
-Use Conventional Commit style:
+Use Conventional Commit style with a Chinese description:
 
 ```text
-feat(editor): add signal editing
-fix(parser): handle multiplexed messages
-refactor(store): extract DbcDocument loading from DbcFileStore
-infra(ci): add format verification job
-docs(readme): document repository layout
+feat(editor): 新增信号编辑功能
+fix(parser): 处理多路复用消息
+refactor(store): 从 DbcFileStore 提取 DbcDocument 加载
+infra(ci): 新增格式校验任务
+docs(readme): 记录仓库布局
 ```
+
+Write commit messages, PR titles, and PR descriptions in Chinese.
 
 Before opening a PR:
 
