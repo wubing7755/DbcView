@@ -27,7 +27,7 @@ flowchart LR
 
 ## 在线试用
 
-<https://wubing7755.github.io/DbcView/> — 无需安装，直接访问即可使用。
+<https://HestiaLab.github.io/DbcView/> — 无需安装，直接访问即可使用。
 
 ## 快速开始
 
