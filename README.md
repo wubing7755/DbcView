@@ -28,7 +28,9 @@ flowchart LR
 
 ## Try it online
 
-<https://wubing7755.github.io/DbcView/> — no installation required.
+A GitHub Pages deployment of the application is available at
+<https://HestiaLab.github.io/DbcView/>. Pushes to `main` rebuild and
+deploy it through `.github/workflows/deploy.yml`.
 
 ## Quick start
 
