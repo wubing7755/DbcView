@@ -2,7 +2,7 @@
 
 `DbcView` is a standalone Blazor WebAssembly application for browsing and
 editing CAN database (DBC) files. It is built on the
-[Atlas](https://github.com/wubing7755/Atlas) dock layout component library,
+[Atlas](https://github.com/HestiaLab/Atlas) dock layout component library,
 consuming the published `Atlas.Blazor` NuGet package — it never references
 Atlas source projects.
 
@@ -18,7 +18,7 @@ Atlas source projects.
 ## Live demo
 
 A GitHub Pages deployment of the application is available at
-<https://wubing7755.github.io/DbcView/>. Pushes to `main` rebuild and
+<https://HestiaLab.github.io/DbcView/>. Pushes to `main` rebuild and
 deploy it through `.github/workflows/deploy.yml`.
 
 ## Build from the repository

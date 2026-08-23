@@ -29,7 +29,7 @@ jobs:
       - name: Publish
         run: dotnet publish src/DbcView -c Release -o publish
 
-      # Project site (https://wubing7755.github.io/DbcView/) needs the base
+      # Project site (https://HestiaLab.github.io/DbcView/) needs the base
       # href rewritten. The BaseHref MSBuild property is not available in
       # current SDKs, so replace it in the published index.html.
       - name: Set base href for project site
